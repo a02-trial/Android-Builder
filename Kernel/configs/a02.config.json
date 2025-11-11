@@ -32,7 +32,7 @@
       "externalCommands": {
         "CLANG_TRIPLE": "arm-linux-gnueabi-",
         "CROSS_COMPILE": "arm-linux-androideabi-",
-        "LD": "ld.lld",
+        "LD": "ld.lld"
       }
     },
     "AnyKernel3": {
