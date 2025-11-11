@@ -34,7 +34,7 @@
         "CROSS_COMPILE": "arm-linux-androideabi-",
         "LD": "ld.lld"
       }
-    },
+    ]
     "AnyKernel3": {
       "use": true,
       "release": true
