@@ -9,8 +9,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "android-11.0.0_r3/clang-r383902",
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone",
+        "branch": "11",
         "name": "clang",
         "binaryEnv": [
           "bin"
