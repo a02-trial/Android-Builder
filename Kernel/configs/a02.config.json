@@ -35,10 +35,9 @@
         "LD": "ld.lld"
       }
      }, 
-    {
+    [
     "AnyKernel3": {
       "use": true,
       "release": true
-  }
  }
 ]
