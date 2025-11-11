@@ -20,7 +20,7 @@
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
         "branch": "android11-release",
         "name": "arm",
-        "binaryEnv": [
+        "binaryEnv": [[
           "bin"
         ]
       }
@@ -34,9 +34,16 @@
         "CROSS_COMPILE": "arm-linux-androideabi-",
         "LD": "ld.lld"
       }
-     },
-    "AnyKernel3": 
+    },
+    "AnyKernel3": {
       "use": true,
-      "release": true
- }
+      "release": true,
+      "custom": {
+        "repo": "https://github.com/easterNday/AnyKernel3/",
+        "branch": "thyme"
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": true
+  }
 ]
