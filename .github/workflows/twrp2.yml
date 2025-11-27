@@ -101,6 +101,11 @@ jobs:
           set +e
           source build/envsetup.sh
           export ALLOW_MISSING_DEPENDENCIES=true
+          export FOX_DRASTIC_SIZE_REDUCTION=true
+          export OF_USE_LZMA_COMPRESSION=true
+          export FOX_DELETE_AROMAFM=true
+          export FOX_VANILLA_BUILD=true
+          export OF_MAINTAINER=a02-trial
           set -e
           lunch ${{ env.DEVICE_MAKEFILE }}-eng && mka adbd ${{ env.DEVICE_BOOT_PARTITION }}image
       - name: ♎ Take the OrangeFox build
