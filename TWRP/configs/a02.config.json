@@ -1,0 +1,16 @@
+[
+    {
+        "OrangeFox": {
+            "Repo": "https://gitlab.com/OrangeFox/sync.git",
+            "Branch": "12.1"
+        },
+        "Device": {
+            "Repo": "https://github.com/a02-trial/android_device_samsung_a02",
+            "Branch": "A022FXXS3BVB1",
+            "Location": "device/samsung/a02",
+            "DeviceName": "a02",
+            "Makefile": "twrp_a02",
+            "BootPartition": "boot"
+        }
+    }
+]
