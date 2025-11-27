@@ -9,7 +9,7 @@
             "Branch": "A022FXXS3BVB1",
             "Location": "device/samsung/a02",
             "DeviceName": "a02",
-            "Makefile": "twrp_a02",
+            "Makefile": "omni_a02",
             "BootPartition": "boot"
         }
     }
