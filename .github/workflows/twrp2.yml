@@ -114,14 +114,14 @@ jobs:
           name: OrangeFox
           if-no-files-found: warn
           path: |
-            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/${{ env.DEVICE_BOOT_PARTITION }}.img
-            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/${{ env.DEVICE_BOOT_PARTITION }}.zip
+            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/ramdisk.img
+            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/boot.img
       - name: ♏ Create GitHub Release => (${{ env.BUILD_DATE }})
         continue-on-error: true
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ env.BUILD_DATE }}.${{ github.run_number }}
           files: |
-            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/*${{ env.DEVICE_BOOT_PARTITION }}.img
-            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/*${{ env.DEVICE_BOOT_PARTITION }}.zip
+            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/ramdisk.img
+            ${{ env.OUT_DIR }}/target/product/${{ env.DEVICE_NAME }}/boot.img
           generate_release_notes: true
