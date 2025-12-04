@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "SM-A022F",
-      "repo": "https://github.com/a02-trial/BR_Kernel_a02",
+      "repo": "https://github.com/rdbckp/kernel_a02",
       "branch": "kernelku",
       "device": "a02",
       "defconfig": "a02_defconfig"
@@ -39,8 +39,8 @@
       "use": true,
       "release": true,
       "custom": {
-        "repo": "https://github.com/easterNday/AnyKernel3/",
-        "branch": "thyme"
+        "repo": "https://github.com/a02-trial/AnyKernel3",
+        "branch": "master"
       }
     },
     "enableKernelSU": false,
